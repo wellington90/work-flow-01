@@ -38,6 +38,7 @@ jobs:
 
       - name: Edit Kustomize image tag
         run: |
-          kustomize edit set image w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}
+          kustomize edit set image w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}=w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}
+          
       - name: Build customized configuration
         run: kustomize build k8s/ > kustomization.yaml
