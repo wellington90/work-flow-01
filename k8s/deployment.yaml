@@ -13,7 +13,7 @@ spec:
         app: app
     spec:
       containers:
-        - name: w3ll1n9t0n/app
+        - name: app
           image: w3ll1n9t0n/app:latest
           ports:
             - containerPort: 5000
