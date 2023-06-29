@@ -6,6 +6,6 @@ resources:
   - service.yaml
 
 images:
-  - name: w3ll1n9t0n/app
+  - name: app
     newName: w3ll1n9t0n/app
-    newTag: ${{ steps.commit_sha.outputs.sha_short }}
+    newTag: 132
