@@ -42,4 +42,3 @@ jobs:
         run: |
           cd k8s
           kustomize edit set image DOCKERHUB_USERNAME/app:${{ steps.commit_sha.outputs.sha_short }}
-
