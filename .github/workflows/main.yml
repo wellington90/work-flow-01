@@ -48,7 +48,7 @@ jobs:
           git config --local user.name "Deploy Action"
           git commit -am "change image tag"
 
-      - name: push
-        uses: ad-m/github-push-action@v0.6.0
+      - name: Push para o GitHub
+        uses: ad-m/github-push-action@master
         with:
-          github_token: $\{{ secrets.GITHUB_TOKEN }} 
+          github_token: ${{ secrets.GITHUB_TOKEN }}
