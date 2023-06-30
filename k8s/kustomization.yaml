@@ -7,5 +7,4 @@ resources:
 
 images:
 - name: app
-  newName: w3ll1n9t0n/app
-  newTag: sha
+  newName: w3ll1n9t0n/app:/home/runner/work/_temp/7d25d5e9-05d3-40b4-b850-8413c93791be.shd4dde5
