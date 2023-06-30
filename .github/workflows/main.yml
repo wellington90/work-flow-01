@@ -28,10 +28,9 @@ jobs:
           
       - name: Push image to Docker Hub
         run: |
-          docker tag w3ll1n9t0n/app w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}
-          docker push w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}
-           
           
+          docker push w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}
+                 
 
       - name: Setup Kustomize
         uses: imranismail/setup-kustomize@v1
