@@ -8,4 +8,4 @@ resources:
 images:
 - name: app
   newName: w3ll1n9t0n/app
-  newTag: f24c7963dc77e2f81e56cd6c7aa5833161759aa7
+  newTag: 55da1e
