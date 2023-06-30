@@ -25,7 +25,7 @@ jobs:
       - name: Build Docker image
         run: |
           docker build -t w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }} .
-          docker tag w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }} w3ll1n9t0n/app:latest
+          docker tag w3ll1n9t0n/app:latest w3ll1n9t0n/app:${{ steps.commit_sha.outputs.sha_short }}
 
       - name: Push image to Docker Hub
         run: |
